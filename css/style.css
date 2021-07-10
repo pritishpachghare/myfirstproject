@@ -207,7 +207,7 @@ margin-bottom: 15px;
     .flex-item{
         flex-direction: column;
     }
-    .flex-columns .column, .flex-grid .column{
+    .flex-columns > .row .column, .flex-grid .row .column{
         flex:100%;
         max-width: 100%;
     }
