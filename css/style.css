@@ -42,10 +42,13 @@ img{
     position: 0;
     top: 0px;
     padding: 0 30px;
-    transition:0.5;
+    transition: 0.5s;
 }
 .navbar.top {
     background: transparent;
+    z-index: 100;
+    position: sticky;
+    top:0;
 }
 .navbar a{
     color: #fff;
