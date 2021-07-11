@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,7 +34,7 @@
         </div>
         <div class="content">
             <h1>The Sky Is The Limit</h1>
-            <p>We Provide Wold Class ASssistance</p>
+            <p>We Provide Wold Class Assistance</p>
             <a href="#about" class="btn"><i class="fas fa-chevron-right"></i>Read More</a>
         </div>
     </header>
@@ -246,7 +246,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
-    <script src="js/lightbox.min.js"></script>
+    <script src="js/lightbox.min.js">
+    </script>
 
     <script>
         const navbar = document.getElementById('navbar');
@@ -268,20 +269,6 @@
             }
 
         }
-        //smooth scrooling
-        $('#navbar a, .btn').on('click', function (e) {
-            if (this.hash !== '') {
-                e.preventDefault();
-                const hash = this.hash;
-
-                $('html, body').animate(
-                    {
-                        scrolledTop: $(hash).offset().top - 100,
-                    },
-                    800
-                );
-            }
-        });
 
 
 
