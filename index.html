@@ -267,8 +267,21 @@
                 navbar.classList.add('top');
                 scrolled = false;
             }
-
         }
+        //smooth scrooling
+        $('#navbar a, .btn').on('click', function (e) {
+            if (this.hash !== '') {
+                epreventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrolledTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
 
 
 
